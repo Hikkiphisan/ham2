@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>[Bài tập] Luyện tập tạo và sử dụng hàm 02</title>
+</head>
+<body>
+<!--<label>Bài 1: Viết hàm tính bình phương của một số bất kỳ được đưa vào. Gọi hàm vừa xây dựng được. </label>-->
+<!--<script>-->
+<!--    function tinhbinhphuong(number) {-->
+<!--        return number * number-->
+<!--    }-->
+<!--    let value = +prompt("Nhập số vào")-->
+<!--    result= tinhbinhphuong(value)-->
+<!--    console.log(result)-->
+<!--</script>-->
+
+
+<!--<label>Bài 2: Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được</label>-->
+<!--<script>-->
+<!--    function tinhdientich (bankinhhinhtron) {-->
+<!--        return 3.14159 * bankinhhinhtron * bankinhhinhtron-->
+<!--    }-->
+<!--    function tinhchuvi (bankinhhinhtron) {-->
+<!--        return 3.14159 * bankinhhinhtron * 2-->
+<!--    }-->
+<!--    let value = +prompt("Nhập bán kính hình tròn")-->
+<!--       resultdientich = tinhdientich(value)-->
+<!--       resultchuvi = tinhchuvi(value)-->
+<!--    console.log(resultdientich + " và " + resultchuvi)-->
+
+<!--</script>-->
+
+
+<!--<label>Bài 3: Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.</label>-->
+
+<!--<script>-->
+<!--    function hamtinhgiaithua (giaithua) {-->
+<!--        let ketqua = 1-->
+<!--        for (let i = 1; i <= giaithua; i++) {-->
+<!--            ketqua *= i  ///ketqua * i = ketqua-->
+<!--        }-->
+<!--        return ketqua-->
+<!--    }-->
+
+<!--    let value = +prompt("Nhập số nguyên bất kỳ để tính giai thừa")-->
+<!--    result = hamtinhgiaithua(value)-->
+<!--    console.log(result)-->
+<!--</script>-->
+
+<!--<h1>Bài 4: Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại trả về false.</h1>-->
+<!--<script>-->
+<!--   function checktrueorfalse(check) {-->
+
+<!--       if (check == parseFloat(check)) {-->
+<!--           return true-->
+<!--       }-->
+<!--       else {-->
+<!--           return false-->
+<!--       }-->
+<!--   }-->
+<!--   let number = +prompt("Nhập vào ký tự để check")-->
+<!--   let result = checktrueorfalse(number)-->
+<!--   console.log(result)-->
+
+<!--</script>-->
+
+<!--<label>Bài 5: Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.</label>-->
+<!--<script>-->
+<!--   function checkmin(arr) {-->
+<!--       let min = Infinity-->
+<!--       for (let i = 0; i < arr.length; i++) {-->
+<!--           if (arr[i] < min)-->
+<!--           min = arr[i]    -->
+<!--       }-->
+<!--       return min;-->
+<!--    -->
+<!--       -->
+<!--   }-->
+<!--   let argumenta = +prompt("Nhập vào a")-->
+<!--   let argumentb = +prompt("Nhập vào b")-->
+<!--   let argumentc = +prompt("Nhập vào c")-->
+<!--   let arr= [argumenta,argumentb,argumentc]-->
+<!--   let result = checkmin(arr) -->
+<!--   console.log(result)-->
+
+<!--</script>-->
+
+
+<!--<label>Bài 6: Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không. Nếu là nguyên dương trả về true, ngược lại trả về false.</label>-->
+<!--<script>-->
+<!--    function checksonguyenduong(number) {-->
+<!--         if (number > 0)  {-->
+<!--             return true;-->
+
+<!--         }-->
+<!--         else if (number <= 0) {-->
+<!--             return false;-->
+
+<!--         }-->
+
+<!--    }-->
+<!--    let input = +prompt("Nhập vào một số")-->
+<!--    let result = checksonguyenduong(input)-->
+<!--    console.log(result)-->
+<!--    if (result == true) {-->
+<!--        alert("Đây là số nguyên dương")-->
+<!--    }-->
+<!--    else if (result == false) {-->
+<!--        alert("Đây không phải là số nguyên dương")-->
+<!--    }-->
+
+<!--</script>-->
+
+
+<!--<label> Bài 7: Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó. Bài 8: Bài 8: Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.</label>-->
+<!--<script>-->
+<!--    function exchange(arr) {-->
+<!--        arr.reverse()-->
+<!--        return arr;-->
+<!--    }-->
+<!--    let inputa = +prompt("Nhập vào a")-->
+<!--    let inputb = +prompt("Nhập vào b")-->
+<!--    let arr = [inputa,inputb]-->
+<!--    let result = exchange(arr).join()-->
+<!--    console.log("[" +result + "]")-->
+
+<!--</script>-->
+
+<!--</body>-->
+
+
+<!--<label>Bài 9: Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không. Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1. </label>-->
+<!--<script>-->
+<!--    let arr = ["Mang_ky_tu"];-->
+<!--    function checkcharacterofarr(character) {-->
+<!--        count = 0-->
+<!--        for (let i = 0; i < arr[0].length ; i++) {-->
+<!--            if (arr[0][i] === character) {-->
+<!--                count++;-->
+<!--            }-->
+<!--        }-->
+<!--        if (count > 0) {-->
+<!--                return count;-->
+<!--            } else {-->
+<!--                return -1-->
+<!--        }-->
+
+
+<!--    }-->
+
+
+<!--    let nhetkytuvao = prompt("Nhập một ký tự bất kỳ và check nó có trong mảng không ")-->
+<!--    let result = checkcharacterofarr(nhetkytuvao)-->
+<!--    console.log(result)-->
+<!--</script>-->
+
